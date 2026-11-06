@@ -34,3 +34,9 @@
 .founders-photo figcaption small{display:block;color:#d6e6f5;font-size:.72rem;margin-top:7px}
 @media(max-width:900px){.founders-grid{grid-template-columns:1fr;gap:30px}.founders-photo{min-height:520px;max-width:610px;width:100%;margin-inline:auto}}
 @media(max-width:600px){.founders-section{padding-top:72px;padding-bottom:72px}.founders-grid{display:flex;flex-direction:column;align-items:stretch;gap:25px}.founders-photo{order:0;aspect-ratio:4/4.5;min-height:0;border-radius:18px}.founders-photo img{object-position:center 35%}.founders-photo figcaption{left:17px;right:17px;bottom:16px}.founders-photo figcaption strong{font-size:1.18rem}.founders-copy{order:1}.founders-copy h2{font-size:clamp(2rem,9vw,2.7rem)}.founders-highlights{gap:12px}.founders-highlights strong{font-size:1.1rem}}
+
+/* Nova foto vertical do atendimento — enquadramento pensado para celular e desktop */
+.about-photo{min-height:560px}
+.about-photo img{object-fit:cover;object-position:50% 45%}
+@media(max-width:900px){.about-photo{min-height:0;aspect-ratio:4/4.5}}
+@media(max-width:600px){.about-photo{aspect-ratio:4/4.5}.about-photo img{object-position:50% 40%}}
