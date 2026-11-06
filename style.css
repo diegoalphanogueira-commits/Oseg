@@ -16,3 +16,21 @@
 .about-photo-label small{display:block;color:#d4e0ee;font-size:.66rem;margin-top:6px}
 @media(max-width:900px){.about-grid{grid-template-columns:1fr;gap:30px}.about-photo{min-height:400px}}
 @media(max-width:600px){.about-grid{display:flex;flex-direction:column;align-items:stretch;gap:26px}.about-photo{order:0;min-height:0;aspect-ratio:4/4.2;border-radius:19px;box-shadow:0 16px 40px rgba(13,55,110,.14)}.about-photo img{object-position:46% 50%}.about-photo-label{left:19px;right:19px;bottom:18px}.about-photo-label strong{font-size:1.24rem}.about-grid>div:last-child{order:1}.about-grid>div:last-child h2{font-size:clamp(2rem,9vw,2.7rem);line-height:1.2}}
+
+/* Histórias da OSEG e apresentação dos sócios */
+.founders-grid{display:grid;grid-template-columns:1fr .9fr;gap:clamp(36px,6vw,90px);align-items:center}
+.founders-copy h2{max-width:650px}.founders-copy p{line-height:1.85}
+.founders-copy strong{color:#132c4f}
+.founders-highlights{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin:28px 0}
+.founders-highlights>div{border-top:2px solid #1776f5;padding-top:17px}
+.founders-highlights strong{display:block;font:800 1.35rem Manrope,sans-serif;color:#0c3d83}
+.founders-highlights span{font-size:.76rem;display:block;color:#62728a;line-height:1.55;margin-top:5px}
+.founders-photo{position:relative;min-height:620px;margin:0;background:linear-gradient(145deg,#dceafa,#aacbec);border-radius:24px;overflow:hidden;box-shadow:0 26px 55px rgba(3,26,71,.16)}
+.founders-photo img{width:100%;height:100%;position:absolute;inset:0;object-fit:cover;object-position:center 40%}
+.founders-photo:after{content:"";position:absolute;inset:53% 0 0;background:linear-gradient(transparent,rgba(0,22,56,.9));pointer-events:none}
+.founders-photo figcaption{position:absolute;bottom:25px;left:26px;right:26px;z-index:1;color:white}
+.founders-photo figcaption span{display:block;color:#b9e3ff;font-size:.68rem;font-weight:800;letter-spacing:.13em;margin-bottom:9px}
+.founders-photo figcaption strong{font:800 clamp(1.15rem,2vw,1.55rem)/1.35 Manrope,sans-serif;letter-spacing:-.03em;display:block}
+.founders-photo figcaption small{display:block;color:#d6e6f5;font-size:.72rem;margin-top:7px}
+@media(max-width:900px){.founders-grid{grid-template-columns:1fr;gap:30px}.founders-photo{min-height:520px;max-width:610px;width:100%;margin-inline:auto}}
+@media(max-width:600px){.founders-section{padding-top:72px;padding-bottom:72px}.founders-grid{display:flex;flex-direction:column;align-items:stretch;gap:25px}.founders-photo{order:0;aspect-ratio:4/4.5;min-height:0;border-radius:18px}.founders-photo img{object-position:center 35%}.founders-photo figcaption{left:17px;right:17px;bottom:16px}.founders-photo figcaption strong{font-size:1.18rem}.founders-copy{order:1}.founders-copy h2{font-size:clamp(2rem,9vw,2.7rem)}.founders-highlights{gap:12px}.founders-highlights strong{font-size:1.1rem}}
