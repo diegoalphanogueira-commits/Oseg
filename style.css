@@ -102,3 +102,9 @@
 .hero-v2 .hero-stats span{font-size:.6rem;line-height:1.45}
 }
 @media(prefers-reduced-motion:no-preference){.hero-v2 .hero-photo{animation:heroPhotoEnter .7s ease-out both}.hero-v2 .hero-content{animation:heroContentEnter .55s ease-out both}@keyframes heroPhotoEnter{from{opacity:.65;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}@keyframes heroContentEnter{from{opacity:.7;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}}
+
+/* Crédito discreto de desenvolvimento */
+.korax-credit{color:#d5e7ff;font-size:.76rem;white-space:nowrap;text-decoration:none;transition:color .2s}
+.korax-credit strong{color:#fff;font-family:Manrope,sans-serif;font-weight:800;letter-spacing:.01em}
+.korax-credit:hover,.korax-credit:focus-visible{color:#7fd4ff}
+@media(max-width:600px){.footer-base .korax-credit{margin-top:6px}}
