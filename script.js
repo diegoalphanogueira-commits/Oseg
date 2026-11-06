@@ -2,6 +2,19 @@
 (()=>{'use strict';
 const $=(s)=>document.querySelector(s);
 const $$=(s)=>[...document.querySelectorAll(s)];
+// Abre a página principal no início; preserva links diretos para seções com #âncora.
+if ('scrollRestoration' in history) history.scrollRestoration='manual';
+function resetInitialScroll(){
+  if (!window.location.hash){
+    const root=document.documentElement;
+    const previous=root.style.scrollBehavior;
+    root.style.scrollBehavior='auto';
+    window.scrollTo(0,0);
+    root.style.scrollBehavior=previous;
+  }
+}
+window.addEventListener('pageshow',resetInitialScroll);
+window.addEventListener('load',resetInitialScroll);
 const WHATSAPP='5511965121140'; // Link de cotação publicado no site oficial da OSEG (validar com a equipe).
 const menu=$('#mainNav'),toggle=$('#menuToggle'),overlay=$('#quoteOverlay'),form=$('#quoteForm');
 const close=$('#closeQuote'),bar=$('#progressBar'),prev=$('#prevStep'),next=$('#nextStep'),send=$('#sendQuote');
