@@ -143,3 +143,9 @@
 @media(max-width:900px){.branch-actions{grid-template-columns:minmax(0,1fr) minmax(0,1.2fr)}}
 @media(max-width:600px){.branch{padding:25px 22px}.branch-actions{gap:9px}.branch .branch-actions .branch-call{padding:10px 11px}.branch-call strong{font-size:.78rem}.branch .branch-actions .branch-whatsapp{padding:11px 8px;font-size:.75rem;gap:6px}.branch-whatsapp svg{height:17px;width:17px}.branch .branch-actions .branch-map{padding:10px 12px}}
 @media(max-width:360px){.branch-actions{grid-template-columns:1fr}.branch .branch-actions .branch-whatsapp{min-height:45px}.branch .branch-actions .branch-map{grid-column:1}}
+
+/* Identidade oficial OSEG: versões fiéis da arte enviada */
+.brand .brand-logo{display:block;width:168px;height:auto;max-width:100%;object-fit:contain}
+.footer-brand .brand-logo-footer{width:176px;height:auto}
+@media(max-width:1100px){.header .brand .brand-logo{width:148px}}
+@media(max-width:600px){.header .brand .brand-logo{width:128px}.footer-brand .brand-logo-footer{width:150px}}
